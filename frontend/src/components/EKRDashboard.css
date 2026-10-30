@@ -1,0 +1,1059 @@
+
+/* =========================================
+   EKR DASHBOARD - COMPLETE RESPONSIVE CSS
+========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+/* =========================================
+   MAIN LAYOUT
+========================================= */
+
+.ekr-layout {
+  width: 100%;
+  height: 100vh;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  background: #f4f7fc;
+  color: #17243b;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+/* =========================================
+   SIDEBAR
+========================================= */
+
+.ekr-sidebar {
+  width: 100%;
+  height: 100vh;
+  min-width: 0;
+  min-height: 0;
+  background: #111d35;
+  color: #fff;
+  padding: 18px 15px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.ekr-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 6px 20px;
+}
+
+.ekr-logo {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 11px;
+  background: #3978f6;
+  display: grid;
+  place-items: center;
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.ekr-brand h2 {
+  margin: 0;
+  font-size: 19px;
+}
+
+.ekr-brand p {
+  margin: 5px 0 0;
+  color: #aab8d0;
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.ekr-nav {
+  display: grid;
+  gap: 7px;
+}
+
+.ekr-nav button {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  color: #c0cbe0;
+  text-align: left;
+  padding: 12px 11px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.ekr-nav button:hover,
+.ekr-nav button.active {
+  background: #253b60;
+  color: #fff;
+}
+
+.ekr-sidebar-bottom {
+  margin-top: auto;
+  flex-shrink: 0;
+  border-top: 1px solid #34435c;
+  padding-top: 12px;
+  color: #b9c5d9;
+  font-size: 12px;
+}
+
+/* =========================================
+   MAIN AREA
+========================================= */
+
+.ekr-main {
+  width: 100%;
+  height: 100vh;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.ekr-header {
+  height: 65px;
+  min-height: 65px;
+  flex-shrink: 0;
+  background: #fff;
+  border-bottom: 1px solid #e6ebf3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 22px;
+}
+
+.ekr-header h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #17243b;
+  margin: 0;
+}
+
+.ekr-user {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.ekr-avatar {
+  width: 34px;
+  height: 34px;
+  background: #e7efff;
+  color: #2868e8;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+}
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.ekr-content {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  min-height: 0;
+  flex: 1;
+  overflow: hidden;
+  padding: 14px 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ekr-heading {
+  flex-shrink: 0;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+.ekr-heading h1 {
+  font-size: 21px;
+  font-weight: 700;
+  color: #17243b;
+  margin: 0 0 5px;
+}
+
+.ekr-heading p {
+  color: #64748b;
+  font-size: 12px;
+  margin: 0;
+}
+
+/* =========================================
+   THREE COLUMN WORKSPACE
+========================================= */
+
+.ekr-workspace {
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+  flex: 1;
+  display: grid;
+  grid-template-columns:
+    minmax(0, 0.95fr)
+    minmax(0, 1.2fr)
+    minmax(0, 1fr);
+  gap: 14px;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+/* =========================================
+   COMMON PANELS
+========================================= */
+
+.ekr-panel {
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #e7ecf4;
+  border-radius: 11px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(31, 53, 88, 0.04);
+}
+
+.ekr-panel-header {
+  min-height: 57px;
+  flex-shrink: 0;
+  padding: 13px;
+  border-bottom: 1px solid #edf0f5;
+  text-align: center;
+}
+
+.ekr-panel-header h3 {
+  margin: 0;
+  font-size: 14px;
+  color: #17243b;
+}
+
+.ekr-panel-body {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  padding: 12px;
+}
+
+/* =========================================
+   DOCUMENT LIST
+========================================= */
+
+.ekr-search {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  padding: 10px 11px;
+  border: 1px solid #e1e7f0;
+  border-radius: 7px;
+  outline: none;
+  font-size: 12px;
+  margin-bottom: 10px;
+  background: #fff;
+  color: #17243b;
+}
+
+.ekr-search:focus,
+.ekr-question-input:focus {
+  border-color: #3978f6;
+}
+
+.ekr-document-list {
+  display: grid;
+  gap: 7px;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  max-height: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #c5d0e0 transparent;
+}
+
+.ekr-document-item {
+  width: 100%;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  padding: 9px;
+  border: 1px solid #edf0f5;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.ekr-document-item.selected {
+  border-color: #3978f6;
+  background: #f1f6ff;
+}
+
+.ekr-document-info {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.ekr-document-info strong {
+  display: block;
+  font-size: 11px;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+.ekr-document-info small {
+  display: block;
+  color: #8994a8;
+  font-size: 9px;
+  margin-top: 4px;
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.ekr-primary-button,
+.ekr-small-button {
+  border: 0;
+  border-radius: 7px;
+  background: #3978f6;
+  color: #fff;
+  cursor: pointer;
+  padding: 9px 11px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.ekr-small-button {
+  padding: 6px 8px;
+  font-size: 10px;
+  flex-shrink: 0;
+}
+
+.ekr-primary-button:hover,
+.ekr-small-button:hover {
+  background: #245fd3;
+}
+
+.ekr-primary-button:disabled,
+.ekr-small-button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.ekr-danger-button {
+  background: #fff0f0;
+  color: #d33b45;
+  border: 0;
+  border-radius: 7px;
+  padding: 6px 8px;
+  cursor: pointer;
+  font-size: 10px;
+  flex-shrink: 0;
+}
+
+.ekr-upload-button {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* =========================================
+   DOCUMENT PREVIEW TABS
+========================================= */
+
+.ekr-preview-tabs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  flex-shrink: 0;
+}
+
+.ekr-preview-tab {
+  padding: 7px 9px;
+  border: 1px solid #e4eaf3;
+  background: #fff;
+  border-radius: 7px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.ekr-preview-tab.active {
+  background: #edf4ff;
+  border-color: #3978f6;
+  color: #2868e8;
+}
+
+/* =========================================
+   MIDDLE DOCUMENT PREVIEW PANEL
+========================================= */
+
+.ekr-workspace > .ekr-panel:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.ekr-workspace > .ekr-panel:nth-child(2) > .ekr-panel-body {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Preview area */
+
+.ekr-workspace > .ekr-panel:nth-child(2) .ekr-preview-area {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* DocumentViewer fills preview area */
+
+.ekr-preview-area > .document-viewer {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+/* Document viewer content */
+
+.ekr-preview-area .document-viewer-content {
+  flex: 1 1 0;
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* =========================================
+   PDF - RESPONSIVE AUTO FIT
+========================================= */
+
+.ekr-preview-area .pdf-document {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+}
+
+.ekr-preview-area .pdf-document .react-pdf__Document {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.ekr-preview-area .pdf-page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+.ekr-preview-area .pdf-page-wrapper .react-pdf__Page {
+  flex: 0 1 auto;
+  min-width: 0;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.ekr-preview-area .pdf-page-wrapper .react-pdf__Page canvas {
+  display: block;
+  max-width: 100%;
+  height: auto !important;
+}
+
+.ekr-preview-area .pdf-target-page {
+  outline: none !important;
+  outline-offset: 0 !important;
+}
+
+/* =========================================
+   DOCX PREVIEW
+========================================= */
+
+.ekr-preview-area .docx-document {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.ekr-preview-frame {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  border: 0;
+  background: #fff;
+}
+
+/* =========================================
+   RELATED SOURCES
+========================================= */
+
+.ekr-related {
+  flex-shrink: 0;
+  margin-top: 10px;
+  padding: 12px 2px 2px;
+  border-top: 1px solid #e8edf5;
+  max-height: 175px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #b8c8df transparent;
+}
+
+.ekr-related h4 {
+  font-size: 12px;
+  font-weight: 700;
+  color: #263b5b;
+  margin: 0 0 10px;
+}
+
+.ekr-source-card {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  text-align: left;
+  background: #f5f8ff;
+  color: #263b5b;
+  border: 1px solid #e1e9f7;
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.ekr-source-card:hover {
+  background: #eaf1ff;
+  border-color: #9bbaff;
+}
+
+.ekr-source-card strong {
+  display: block;
+  color: #2459a8;
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.ekr-source-card small {
+  display: block;
+  color: #64748b;
+  font-size: 10px;
+}
+
+.ekr-source-card p {
+  color: #475569;
+  font-size: 10px;
+  line-height: 1.5;
+  margin: 6px 0 0;
+}
+
+/* =========================================
+   AI CHAT PANEL
+========================================= */
+
+.ekr-chat-panel {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  height: 100%;
+}
+
+.ekr-chat-panel .ekr-panel-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.ekr-chat-status {
+  color: #21976b;
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+.ekr-chat-messages {
+  flex: 1;
+  min-height: 0;
+  max-height: none;
+  padding: 12px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #b8c8df transparent;
+}
+
+.ekr-message {
+  width: fit-content;
+  max-width: 100%;
+  padding: 10px 12px;
+  border-radius: 9px;
+  font-size: 12px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.ekr-message.ai {
+  background: #f0f4fb;
+  color: #293750;
+}
+
+.ekr-message.user {
+  background: #3978f6;
+  color: #fff;
+  margin-left: auto;
+}
+
+/* Chat form */
+
+.ekr-chat-form {
+  display: flex;
+  gap: 7px;
+  padding: 10px;
+  border-top: 1px solid #edf0f5;
+  background: #fff;
+  flex-shrink: 0;
+}
+
+.ekr-question-input {
+  flex: 1;
+  width: 0;
+  min-width: 0;
+  border: 1px solid #e1e7f0;
+  border-radius: 7px;
+  padding: 10px;
+  outline: none;
+  font-size: 11px;
+}
+
+/* Chat sources */
+
+.ekr-chat-source {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  margin-top: 7px;
+  padding: 9px 11px;
+  text-align: left;
+  color: #28569a;
+  background: #f5f8ff;
+  border: 1px solid #e0e9f8;
+  border-radius: 7px;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+  white-space: normal;
+  cursor: pointer;
+}
+
+.ekr-chat-source:hover {
+  background: #eaf1ff;
+  border-color: #9bbaff;
+}
+
+.ekr-error {
+  color: #d33b45;
+  font-size: 11px;
+  padding: 8px 12px;
+}
+
+.ekr-muted {
+  color: #8994a8;
+  font-size: 11px;
+  text-align: center;
+  padding: 15px 8px;
+}
+
+/* =========================================
+   UPLOAD MODAL
+========================================= */
+
+.ekr-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(15, 29, 53, 0.58);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.ekr-modal {
+  width: min(480px, 100%);
+  background: #ffffff;
+  border: 1px solid #e5eaf2;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 20px 60px rgba(15, 29, 53, 0.20);
+  animation: ekrModalIn 0.2s ease-out;
+}
+
+.ekr-modal h2 {
+  color: #17243b;
+  font-size: 21px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 12px;
+}
+
+.ekr-modal p {
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.6;
+  text-align: center;
+  margin: 0 0 22px;
+}
+
+.ekr-modal input[type="file"] {
+  display: block;
+  width: 100%;
+  padding: 17px;
+  margin: 0;
+  background: #f7f9fd;
+  border: 1px dashed #a9bee5;
+  border-radius: 10px;
+  color: #475569;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.ekr-modal input[type="file"]::file-selector-button {
+  background: #eaf1ff;
+  color: #2868e8;
+  border: 1px solid #cbdcff;
+  border-radius: 7px;
+  padding: 9px 13px;
+  margin-right: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ekr-modal input[type="file"]::file-selector-button:hover {
+  background: #dce8ff;
+}
+
+.ekr-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.ekr-modal-actions button {
+  min-width: 90px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.ekr-modal-actions .ekr-primary-button {
+  background: #3978f6;
+  color: #ffffff;
+  border: 1px solid #3978f6;
+}
+
+.ekr-modal-actions .ekr-primary-button:hover {
+  background: #245fd3;
+}
+
+.ekr-modal-actions button:not(.ekr-primary-button) {
+  background: #f3f5f9;
+  color: #475569;
+  border: 1px solid #e1e7f0;
+}
+
+.ekr-modal-actions button:not(.ekr-primary-button):hover {
+  background: #e8edf5;
+}
+
+.ekr-modal-actions button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+@keyframes ekrModalIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* =========================================
+   SCROLLBARS
+========================================= */
+
+.ekr-document-list,
+.ekr-chat-messages,
+.ekr-related,
+.ekr-preview-area,
+.ekr-preview-area .document-viewer-content {
+  scrollbar-width: thin;
+  scrollbar-color: #b8c8df transparent;
+}
+
+.ekr-document-list::-webkit-scrollbar,
+.ekr-chat-messages::-webkit-scrollbar,
+.ekr-related::-webkit-scrollbar,
+.ekr-preview-area::-webkit-scrollbar,
+.ekr-preview-area .document-viewer-content::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+.ekr-document-list::-webkit-scrollbar-thumb,
+.ekr-chat-messages::-webkit-scrollbar-thumb,
+.ekr-related::-webkit-scrollbar-thumb,
+.ekr-preview-area::-webkit-scrollbar-thumb,
+.ekr-preview-area .document-viewer-content::-webkit-scrollbar-thumb {
+  background: #b8c8df;
+  border-radius: 10px;
+}
+
+.ekr-document-list::-webkit-scrollbar-track,
+.ekr-chat-messages::-webkit-scrollbar-track,
+.ekr-related::-webkit-scrollbar-track,
+.ekr-preview-area::-webkit-scrollbar-track,
+.ekr-preview-area .document-viewer-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* =========================================
+   MEDIUM SCREENS
+========================================= */
+
+@media (max-width: 1250px) and (min-width: 761px) {
+  .ekr-layout {
+    grid-template-columns: 190px minmax(0, 1fr);
+  }
+
+  .ekr-content {
+    padding: 12px;
+  }
+
+  .ekr-workspace {
+    grid-template-columns:
+      minmax(220px, 0.9fr)
+      minmax(260px, 1.1fr);
+  }
+
+  .ekr-chat-panel {
+    grid-column: 1 / -1;
+    height: 420px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 760px) {
+  html,
+  body,
+  #root {
+    height: auto;
+    min-height: 100%;
+    overflow: auto;
+  }
+
+  .ekr-layout {
+    height: auto;
+    min-height: 100vh;
+    overflow: visible;
+    grid-template-columns: 1fr;
+  }
+
+  .ekr-sidebar {
+    height: auto;
+    min-height: auto;
+    padding: 12px;
+  }
+
+  .ekr-brand {
+    padding-bottom: 12px;
+  }
+
+  .ekr-nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ekr-sidebar-bottom {
+    margin-top: 12px;
+  }
+
+  .ekr-main {
+    height: auto;
+    overflow: visible;
+  }
+
+  .ekr-header {
+    height: 58px;
+    min-height: 58px;
+    padding: 0 12px;
+  }
+
+  .ekr-content {
+    overflow: visible;
+    padding: 12px;
+  }
+
+  .ekr-heading h1 {
+    font-size: 19px;
+  }
+
+  .ekr-workspace {
+    overflow: visible;
+    grid-template-columns: 1fr;
+  }
+
+  .ekr-panel {
+    height: auto;
+    min-height: 350px;
+  }
+
+  .ekr-document-list {
+    max-height: 350px;
+    height: auto;
+  }
+
+  .ekr-workspace > .ekr-panel:nth-child(2) .ekr-panel-body {
+    min-height: 0;
+  }
+
+  .ekr-preview-area {
+    flex: none;
+    height: 450px;
+    min-height: 350px;
+  }
+
+  .ekr-chat-panel {
+    grid-column: auto;
+    min-height: 420px;
+    height: 450px;
+  }
+
+  .ekr-related {
+    max-height: 200px;
+  }
+
+  .ekr-modal {
+    padding: 20px;
+  }
+
+  .ekr-modal h2 {
+    font-size: 18px;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 500px) {
+  .ekr-modal {
+    padding: 20px;
+  }
+
+  .ekr-modal h2 {
+    font-size: 18px;
+  }
+
+  .ekr-header {
+    padding: 0 10px;
+  }
+
+  .ekr-header h2 {
+    font-size: 16px;
+  }
+}

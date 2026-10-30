@@ -1,0 +1,12 @@
+
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.git/
+.env
+node_modules/
+frontend/
+backup/
+tests/
+data/qdrant/

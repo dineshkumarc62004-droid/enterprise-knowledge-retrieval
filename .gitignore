@@ -1,0 +1,37 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+build/
+dist/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Node
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# Local databases and uploaded documents
+data/
+backup/
+
+# Temporary test files
+empty.txt
+empty_test.txt
+unsupported_test.xyz
+large_test.txt
+sample.exe
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
